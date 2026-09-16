@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ardesia Luxury Drive</title>
-<meta name="description" content="Ardesia — noleggio di vetture di lusso e servizio NCC con autista a Roma. Berline executive, SUV, gran turismo e van VIP, disponibili 24/7.">
+<meta name="description" content="Ardesia — noleggio di vetture di lusso e servizio con autista a Roma. Berline executive, SUV, gran turismo e van VIP, disponibili 24/7.">
 <meta name="theme-color" content="#07080A">
 <meta name="format-detection" content="telephone=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Ardesia Luxury Drive">
-<meta property="og:title" content="Ardesia · Noleggio luxury e NCC a Roma">
+<meta property="og:title" content="Ardesia · Noleggio luxury e auto con autista a Roma">
 <meta property="og:description" content="Berline executive, SUV, gran turismo e van VIP. Guida libera o con autista, consegna dove sei, 24/7.">
 <meta property="og:image" content="https://simoners7.github.io/ardesia/img/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -161,18 +161,18 @@ button,input,select{font:inherit;color:inherit}
 .plus svg{width:15px;height:15px}
 .rail-note{font-size:13px;color:var(--label-3);margin-top:10px}
 
-/* ncc */
-.ncc{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
-.ncc__media{position:relative;border-radius:var(--r-xl);overflow:hidden;aspect-ratio:4/4.3;background:#000}
-.ncc__media img{width:100%;height:100%;object-fit:cover;object-position:58% 50%}
-.ncc__live{position:absolute;left:16px;right:16px;bottom:16px;display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:22px;background:var(--glass);-webkit-backdrop-filter:blur(24px) saturate(170%);backdrop-filter:blur(24px) saturate(170%);box-shadow:inset 0 0 0 .5px var(--hair)}
-.ncc__live .ic{width:42px;height:42px;border-radius:12px;background:var(--champagne);color:var(--on-champagne);display:grid;place-items:center;flex:none}
-.ncc__live .ic svg{width:22px;height:22px}
-.ncc__live small{display:block;font-size:12px;color:var(--label-2)}
-.ncc__live strong{font-size:15px;font-weight:600;letter-spacing:-.01em}
-.ncc__live .eta{margin-left:auto;text-align:right}
-.ncc__live .eta strong{font-size:20px}
-.ncc__copy{display:flex;flex-direction:column;gap:18px}
+/* con autista */
+.autista{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.autista__media{position:relative;border-radius:var(--r-xl);overflow:hidden;aspect-ratio:4/4.3;background:#000}
+.autista__media img{width:100%;height:100%;object-fit:cover;object-position:58% 50%}
+.autista__live{position:absolute;left:16px;right:16px;bottom:16px;display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:22px;background:var(--glass);-webkit-backdrop-filter:blur(24px) saturate(170%);backdrop-filter:blur(24px) saturate(170%);box-shadow:inset 0 0 0 .5px var(--hair)}
+.autista__live .ic{width:42px;height:42px;border-radius:12px;background:var(--champagne);color:var(--on-champagne);display:grid;place-items:center;flex:none}
+.autista__live .ic svg{width:22px;height:22px}
+.autista__live small{display:block;font-size:12px;color:var(--label-2)}
+.autista__live strong{font-size:15px;font-weight:600;letter-spacing:-.01em}
+.autista__live .eta{margin-left:auto;text-align:right}
+.autista__live .eta strong{font-size:20px}
+.autista__copy{display:flex;flex-direction:column;gap:18px}
 .list{margin-top:14px;background:var(--graphite);border-radius:var(--r-lg);overflow:hidden;box-shadow:inset 0 0 0 .5px rgba(255,255,255,.06)}
 .row{display:flex;align-items:center;gap:14px;padding:14px 16px;position:relative;width:100%;background:none;border:0;text-align:left;cursor:pointer;transition:background .2s}
 .row:hover{background:rgba(255,255,255,.04)}
@@ -269,7 +269,7 @@ footer a:hover{color:var(--label)}
   .fields .btn{grid-column:1/-1;border-radius:6px 6px 20px 20px;min-height:56px}
   .facts ul{grid-template-columns:repeat(2,1fr)}
   .rail{grid-auto-columns:minmax(290px,46%)}
-  .ncc,.faq,.cta{grid-template-columns:minmax(0,1fr)}
+  .autista,.faq,.cta{grid-template-columns:minmax(0,1fr)}
   .bento{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:700px){
@@ -336,7 +336,7 @@ footer a:hover{color:var(--label)}
     <div class="island__status" aria-live="polite"><span class="pulse"></span><b id="islandStatus">3 autisti disponibili ora · Roma</b></div>
     <div class="island__links"><div>
       <a href="#flotta">Flotta</a>
-      <a href="#ncc">Con autista</a>
+      <a href="#autista">Con autista</a>
       <a href="#esperienza">Esperienza</a>
       <a href="#faq">Domande</a>
       <a href="#contatti">Contatti</a>
@@ -352,7 +352,7 @@ footer a:hover{color:var(--label)}
     <div class="hero__media"><img src="img/hero.jpg" alt="Berlina di lusso nera in uno studio buio, con la luce che disegna il profilo della carrozzeria" fetchpriority="high"></div>
     <div class="wrap hero__inner">
       <div class="hero__copy">
-        <span class="eyebrow rise">Noleggio luxury &amp; NCC · Roma</span>
+        <span class="eyebrow rise">Noleggio luxury · Con autista · Roma</span>
         <h1 class="large-title rise d1">Arrivare<br>è <span>un'arte.</span></h1>
         <p class="lead rise d2">Berline executive, SUV e gran turismo da guidare in libertà, oppure con un autista professionista che conosce ogni strada di Roma. Consegna dove sei, a qualsiasi ora.</p>
         <div class="hero__actions rise d3">
@@ -366,7 +366,7 @@ footer a:hover{color:var(--label)}
           <div class="seg" role="group" aria-label="Tipo di servizio" data-seg="service">
             <span class="seg__thumb"></span>
             <button type="button" aria-pressed="true" data-value="rent">Noleggio</button>
-            <button type="button" aria-pressed="false" data-value="ncc">Con autista</button>
+            <button type="button" aria-pressed="false" data-value="autista">Con autista</button>
           </div>
           <span class="booker__note"><svg width="16" height="16"><use href="#i-shield"/></svg>Cancellazione gratuita fino a 48 ore prima</span>
         </div>
@@ -379,7 +379,7 @@ footer a:hover{color:var(--label)}
             <select id="b-car"><option value="berlina">Berlina Executive</option><option value="suv">SUV Prestige</option><option value="sportiva">Gran Turismo</option></select></div>
           <button class="btn btn-primary" type="button" id="b-go">Verifica disponibilità</button>
         </div>
-        <div class="fields" data-group="ncc" hidden>
+        <div class="fields" data-group="autista" hidden>
           <div class="field"><label for="n-from">Partenza</label>
             <select id="n-from"><option>Aeroporto Fiumicino (FCO)</option><option>Roma Centro · in hotel</option><option>Aeroporto Ciampino (CIA)</option><option>Stazione Roma Termini</option><option>Porto di Civitavecchia</option></select></div>
           <div class="field"><label for="n-to">Destinazione</label><input id="n-to" type="text" value="Hotel de Russie, Via del Babuino"></div>
@@ -456,38 +456,38 @@ footer a:hover{color:var(--label)}
     </div>
   </section>
 
-  <!-- ===== NCC ===== -->
-  <section class="section" id="ncc" data-status="Con autista · Fiumicino → Centro ~45 min" style="padding-top:0">
-    <div class="wrap ncc">
-      <div class="ncc__media">
-        <img src="img/ncc-night.jpg" alt="Berlina nera ferma su asfalto bagnato di notte, con le luci della città sfocate sullo sfondo">
-        <div class="ncc__live">
+  <!-- ===== Con autista ===== -->
+  <section class="section" id="autista" data-status="Con autista · Fiumicino → Centro ~45 min" style="padding-top:0">
+    <div class="wrap autista">
+      <div class="autista__media">
+        <img src="img/notte-roma.jpg" alt="Berlina nera ferma su asfalto bagnato di notte, con le luci della città sfocate sullo sfondo">
+        <div class="autista__live">
           <span class="ic"><svg><use href="#i-plane"/></svg></span>
           <span><small>Volo AZ 611 da New York · atterrato</small><strong>Il tuo autista ti aspetta agli arrivi</strong></span>
           <span class="eta tnum"><small>Centro</small><strong>45 min</strong></span>
         </div>
       </div>
-      <div class="ncc__copy">
-        <span class="eyebrow">Noleggio con conducente</span>
+      <div class="autista__copy">
+        <span class="eyebrow">Servizio con autista</span>
         <h2 class="title-2">Con autista. Ovunque tu debba essere.</h2>
-        <p class="lead">Autisti con licenza NCC, selezionati e formati per il servizio d'eccellenza: puntualità, discrezione, bottiglia d'acqua fresca e Wi‑Fi a bordo.</p>
+        <p class="lead">Autisti professionisti, selezionati e formati per il servizio d'eccellenza: puntualità, discrezione, bottiglia d'acqua fresca e Wi‑Fi a bordo.</p>
         <div class="list" role="list">
-          <button class="row" role="listitem" data-open-sheet="berlina" data-mode="ncc">
+          <button class="row" role="listitem" data-open-sheet="berlina" data-mode="autista">
             <span class="sq"><svg><use href="#i-plane"/></svg></span>
             <span class="t"><strong>Transfer aeroporti</strong><span>Fiumicino e Ciampino, monitoraggio del volo incluso</span></span>
             <span class="v tnum">da €110</span><svg class="chev"><use href="#i-chev"/></svg>
           </button>
-          <button class="row" role="listitem" data-open-sheet="berlina" data-mode="ncc">
+          <button class="row" role="listitem" data-open-sheet="berlina" data-mode="autista">
             <span class="sq"><svg><use href="#i-brief"/></svg></span>
             <span class="t"><strong>Business e roadshow</strong><span>Autista a disposizione per incontri e congressi</span></span>
             <span class="v tnum">da €85/h</span><svg class="chev"><use href="#i-chev"/></svg>
           </button>
-          <button class="row" role="listitem" data-open-sheet="van" data-mode="ncc">
+          <button class="row" role="listitem" data-open-sheet="van" data-mode="autista">
             <span class="sq"><svg><use href="#i-rings"/></svg></span>
             <span class="t"><strong>Matrimoni ed eventi</strong><span>Vetture addobbate, coordinamento con il wedding planner</span></span>
             <span class="v">su misura</span><svg class="chev"><use href="#i-chev"/></svg>
           </button>
-          <button class="row" role="listitem" data-open-sheet="suv" data-mode="ncc">
+          <button class="row" role="listitem" data-open-sheet="suv" data-mode="autista">
             <span class="sq"><svg><use href="#i-route"/></svg></span>
             <span class="t"><strong>Tour e lunghe tratte</strong><span>Costiera Amalfitana, Toscana, Firenze, Napoli</span></span>
             <span class="v tnum">da €2,4/km</span><svg class="chev"><use href="#i-chev"/></svg>
@@ -548,7 +548,7 @@ footer a:hover{color:var(--label)}
         <details><summary>Quanti chilometri sono inclusi?<svg><use href="#i-chev"/></svg></summary><p>300 km al giorno compresi nel prezzo. Il chilometro extra costa da €1,50 in base alla vettura; per viaggi lunghi prepariamo pacchetti dedicati.</p></details>
         <details><summary>Consegnate a domicilio o in aeroporto?<svg><use href="#i-chev"/></svg></summary><p>Sì. La consegna a Roma entro il Grande Raccordo Anulare è gratuita per noleggi di almeno 2 giorni. Fiumicino, Ciampino e Civitavecchia hanno un supplemento fisso.</p></details>
         <details><summary>Posso cancellare la prenotazione?<svg><use href="#i-chev"/></svg></summary><p>La cancellazione è gratuita fino a 48 ore prima del ritiro. Dopo, tratteniamo il 30% dell'importo per coprire la preparazione della vettura.</p></details>
-        <details><summary>Il servizio NCC è autorizzato?<svg><use href="#i-chev"/></svg></summary><p>Tutti i nostri autisti operano con autorizzazione NCC e copertura assicurativa per il trasporto passeggeri. Emettiamo fattura per aziende e agenzie.</p></details>
+        <details><summary>Chi sono i vostri autisti?<svg><use href="#i-chev"/></svg></summary><p>Autisti professionisti, bilingue e selezionati per il servizio di alto livello, con copertura assicurativa per il trasporto passeggeri. Emettiamo fattura per aziende e agenzie.</p></details>
       </div>
     </div>
   </section>
@@ -574,7 +574,7 @@ footer a:hover{color:var(--label)}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Ardesia Luxury Drive S.r.l. · P.IVA 00000000000 · Autorizzazione NCC n. 0000</span>
+    <span>© 2026 Ardesia Luxury Drive S.r.l. · P.IVA 00000000000</span>
     <nav aria-label="Note legali"><a href="#">Privacy</a><a href="#">Cookie</a><a href="#">Condizioni di noleggio</a></nav>
   </div>
 </footer>
@@ -591,14 +591,14 @@ footer a:hover{color:var(--label)}
   <div class="seg" role="group" aria-label="Tipo di servizio" data-seg="sheet" style="display:grid;width:100%">
     <span class="seg__thumb"></span>
     <button type="button" aria-pressed="true" data-value="rent">Noleggio</button>
-    <button type="button" aria-pressed="false" data-value="ncc">Con autista</button>
+    <button type="button" aria-pressed="false" data-value="autista">Con autista</button>
   </div>
   <div class="form-list" data-sgroup="rent">
     <div class="form-row"><label for="s-from">Ritiro</label><input id="s-from" type="date" value="2026-09-18"></div>
     <div class="form-row"><label for="s-to">Riconsegna</label><input id="s-to" type="date" value="2026-09-21"></div>
     <div class="form-row"><label for="s-where">Consegna a</label><select id="s-where"><option>Roma Centro · in hotel</option><option>Aeroporto Fiumicino (FCO)</option><option>Aeroporto Ciampino (CIA)</option><option>Stazione Roma Termini</option></select></div>
   </div>
-  <div class="form-list" data-sgroup="ncc" hidden>
+  <div class="form-list" data-sgroup="autista" hidden>
     <div class="form-row"><label for="s-date">Data e ora</label><input id="s-date" type="datetime-local" value="2026-09-18T14:30"></div>
     <div class="form-row"><label for="s-hours">Ore a disposizione</label><select id="s-hours"><option value="3">3 ore</option><option value="4" selected>4 ore</option><option value="6">6 ore</option><option value="8">8 ore · giornata</option></select></div>
     <div class="form-row"><label for="s-pax">Passeggeri</label><select id="s-pax"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5–7</option></select></div>
@@ -613,10 +613,10 @@ footer a:hover{color:var(--label)}
 <script>
 (function(){
   const CARS = {
-    berlina:{name:"Berlina Executive",like:"tipo Mercedes-Benz Classe S o similare",img:"img/fleet-berlina.jpg",day:690,hour:85,modes:["rent","ncc"]},
-    suv:{name:"SUV Prestige",like:"tipo Range Rover o similare",img:"img/fleet-suv.jpg",day:790,hour:95,modes:["rent","ncc"]},
+    berlina:{name:"Berlina Executive",like:"tipo Mercedes-Benz Classe S o similare",img:"img/fleet-berlina.jpg",day:690,hour:85,modes:["rent","autista"]},
+    suv:{name:"SUV Prestige",like:"tipo Range Rover o similare",img:"img/fleet-suv.jpg",day:790,hour:95,modes:["rent","autista"]},
     sportiva:{name:"Gran Turismo",like:"tipo Porsche 911 o similare",img:"img/fleet-sportiva.jpg",day:990,hour:null,modes:["rent"]},
-    van:{name:"Van VIP",like:"tipo Mercedes-Benz Classe V o similare",img:"img/fleet-van.jpg",day:null,hour:110,modes:["ncc"]}
+    van:{name:"Van VIP",like:"tipo Mercedes-Benz Classe V o similare",img:"img/fleet-van.jpg",day:null,hour:110,modes:["autista"]}
   };
   const WA = "393931001284"; // WhatsApp del cliente
   const eur = n => "€" + n.toLocaleString("it-IT");
@@ -728,7 +728,7 @@ footer a:hover{color:var(--label)}
     const w = $("#b-where").value; $$("#s-where option").forEach(o => o.selected = o.text === w);
     openSheet($("#b-car").value, "rent");
   });
-  $("#n-go").addEventListener("click", () => { $("#s-date").value = $("#n-date").value; openSheet($("#n-car").value, "ncc"); });
+  $("#n-go").addEventListener("click", () => { $("#s-date").value = $("#n-date").value; openSheet($("#n-car").value, "autista"); });
 
   // toast on send
   const toast = $("#toast");
